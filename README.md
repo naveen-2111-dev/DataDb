@@ -27,8 +27,8 @@ yarn
 this will install all the needed dependencies
 
 **3.** _connect to your database_
-create an '.env' file and add your database_url:
-' DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/<database-name>" '
+create an `.env` file and add your database_url:
+` DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/<database-name>" `
 
 **4.** _Migrate_:
 
@@ -48,7 +48,7 @@ yarn generate
 
 **6.** _to formate code_:
 
-````
+```
 npm run format
 or
 yarn format
@@ -57,7 +57,7 @@ format the code whenever its needed to organize the code and increase the code r
 
 
 **7.** *start project*:
-````
+```
 
 npm run dev
 or
