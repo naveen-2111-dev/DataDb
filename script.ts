@@ -18,7 +18,18 @@ async function main() {
       userId: user.id,
     },
   });
-  console.log(user, post);
+
+  const Setting = await prisma.settingsa.create({
+    data: {
+      theme: 'dark' || 'light',
+      LikeCount: 10,
+      commentCount: 20,
+      AddNumber: 6382813423,
+      changeUserEmail: "naveen@gmail.com"
+    },
+  });
+
+  console.log(user, post, Setting);
 }
 
 main()

@@ -14,11 +14,12 @@ datasource db {
 }
 
 model User {
-  id      String  @id @default(uuid())
-  name    String
-  email   String? @default("")
-  isAdmin Boolean @default(false)
-  post    Post[]
+  id       String     @id @default(uuid())
+  name     String
+  email    String?    @default("")
+  isAdmin  Boolean    @default(false)
+  post     Post[]
+  settings settingsa[]
 }
 
 model Post {
@@ -30,3 +31,13 @@ model Post {
   userId    String
 }
 
+model settingsa {
+  id              String  @id @default(uuid())
+  User            User?   @relation(fields: [userId], references: [id])
+  userId          String?
+  theme           String
+  LikeCount       Int
+  commentCount    Int
+  AddNumber       BigInt
+  changeUserEmail String
+}
