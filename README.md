@@ -10,13 +10,13 @@ This backend code is used for performing CRUD operations(create, read, update, D
 
 ## How To use
 
-**1.** _clone the Repo_:
+**1.** clone the Repo:
 
 ```
 git clone <repo-url>
 ```
 
-**2.** _install node_modules_:
+**2.** install node_modules:
 
 ```
 npm install
@@ -26,11 +26,11 @@ yarn
 
 this will install all the needed dependencies
 
-**3.** _connect to your database_
+**3.** connect to your database
 create an `.env` file and add your database_url:
 ` DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/<database-name>" `
 
-**4.** _Migrate_:
+**4.** Migrate:
 
 ```
 npm run migrate
@@ -38,7 +38,7 @@ or
 yarn migrate
 ```
 
-**5.** _generate prisma client-js_:
+**5.** generate prisma client-js:
 
 ```
 npm run generate
@@ -46,7 +46,7 @@ or
 yarn generate
 ```
 
-**6.** _to formate code_:
+**6.** to formate code:
 
 ```
 npm run format
@@ -56,7 +56,7 @@ yarn format
 format the code whenever its needed to organize the code and increase the code readablity
 
 
-**7.** *start project*:
+**7.** start project:
 ```
 
 npm run dev
